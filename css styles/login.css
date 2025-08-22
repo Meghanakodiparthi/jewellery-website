@@ -178,13 +178,124 @@
 .loginbar:hover{
     opacity:0.7;
 }
+@media screen and (max-width: 1024px) {
+    .h1 {
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .title {
+        top: 100px;
+        padding-left: 10px;
+    }
+
+    .border {
+        bottom: 10%;
+        right: 2%;
+        width: 300px;
+        height: auto;
+    }
+
+    .header {
+        grid-template-columns: 1fr 1fr;
+        height: 60px;
+    }
+
+    .middle {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .right {
+        width: 250px;
+    }
+
+    .search {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .middle {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .middle .h5 {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .right {
+        position: static;
+        margin-top: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tool {
+        width: 90%;
+    }
+
+    .title {
+        top: 80px;
+        padding: 0 10px;
+    }
+
+    .h1 {
+        font-size: 28px;
+        width: 100%;
+    }
+
+    .border {
+        position: static;
+        margin: 20px auto;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .typebar {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .loginbar {
+        width: 100%;
+        font-size: 18px;
+    }
+}
 * {
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 1440px) {
+  .h1 {
+    font-size: 54px;
+    width: 80%;
+  }
+
+  .border {
+    width: 350px;
+    height: auto;
+  }
+
+  .title {
+    top: 120px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .h1 {
     font-size: 42px;
-    width: 90%;
+    width: 85%;
   }
 
   .title {
@@ -195,7 +306,7 @@
   .border {
     bottom: 5%;
     right: 3%;
-    width: 320px;
+    width: 300px;
     height: auto;
   }
 
@@ -210,9 +321,10 @@
   }
 
   .right {
-    width: 280px;
+    width: 260px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -275,11 +387,13 @@
 @media screen and (max-width: 480px) {
   .h1 {
     font-size: 24px;
+    width: 100%;
   }
 
   .border {
     padding: 15px;
     font-size: 14px;
+    width: 95%;
   }
 
   .search {
@@ -300,6 +414,25 @@
     font-size: 14px;
   }
 }
+@media screen and (max-height: 700px) {
+  .title {
+    top: 60px;
+  }
 
+  .border {
+    bottom: 2%;
+    height: auto;
+  }
 
+  .h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .border {
+    position: static;
+    margin: 10px auto;
+  }
+}
 
