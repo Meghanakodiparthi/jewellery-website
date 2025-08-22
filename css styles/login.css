@@ -2,9 +2,11 @@
     margin:0;
     padding:0;
     font-family: Roboto,'Arimo';
+
 }
 .image{
     position:relative;
+
 }
 .bg
 {
@@ -30,11 +32,12 @@
 .left{
     margin-top:0px;
     display:flex;
-    max-width:200px;
+    width:250px;
     height:70px;
     padding-left:20px;
     justify-content: center;
     align-items: center;
+    top:0;
 
     
 }
@@ -51,6 +54,7 @@
     align-items: center;
     max-width:600px;
     margin-left:-80px;
+    height:70px;
 }
 .h5{
      display:flex;
@@ -94,6 +98,7 @@
          border:1px solid rgb(255, 109, 133);
          padding-left:10px;
          text-shadow: 8px -2px 30px rgba(0, 0, 0, 0.863);
+
 }
 .search:hover
 {
@@ -177,6 +182,102 @@
 }
 .loginbar:hover{
     opacity:0.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .h1 {
+    font-size: 42px;
+    width: 90%;
+  }
+
+  .title {
+    top: 100px;
+    padding-left: 15px;
+  }
+
+  .border {
+    bottom: 5%;
+    right: 3%;
+    width: 320px;
+    height: auto;
+  }
+
+  .header {
+    grid-template-columns: 1fr 1fr;
+    height: 60px;
+  }
+
+  .middle {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .right {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    display: flex;
+    text-align: center;
+  }
+
+  .middle {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .middle .h5 {
+    margin: 5px;
+    font-size: 14px;
+  }
+
+  .right {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tool {
+    width: 90%;
+  }
+
+  .title {
+    top: 80px;
+    padding: 0 10px;
+  }
+
+  .h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .border {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .typebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .loginbar {
+    width: 100%;
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 1024px) {
     .h1 {
@@ -272,167 +373,22 @@
         font-size: 18px;
     }
 }
-* {
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 1440px) {
-  .h1 {
-    font-size: 54px;
-    width: 80%;
-  }
-
-  .border {
-    width: 350px;
-    height: auto;
-  }
-
-  .title {
-    top: 120px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .h1 {
-    font-size: 42px;
-    width: 85%;
-  }
-
-  .title {
-    top: 100px;
-    padding-left: 15px;
-  }
-
-  .border {
-    bottom: 5%;
-    right: 3%;
-    width: 300px;
-    height: auto;
-  }
-
-  .header {
-    grid-template-columns: 1fr 1fr;
-    height: 60px;
-  }
-
-  .middle {
-    margin-left: 0;
-    font-size: 15px;
-  }
-
-  .right {
-    width: 260px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-    display: flex;
-    text-align: center;
-  }
-
-  .middle {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 0;
-  }
-
-  .middle .h5 {
-    margin: 5px;
-    font-size: 14px;
-  }
-
-  .right {
-    position: static;
-    margin-top: 10px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .tool {
-    width: 90%;
-  }
-
-  .title {
-    top: 80px;
-    padding: 0 10px;
-  }
-
-  .h1 {
-    font-size: 32px;
-    width: 100%;
-  }
-
-  .border {
-    position: static;
-    margin: 20px auto;
-    width: 90%;
-    padding: 20px;
-    height: auto;
-  }
-
-  .typebar {
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .loginbar {
-    width: 100%;
-    font-size: 18px;
-  }
-}
 @media screen and (max-width: 480px) {
-  .h1 {
-    font-size: 24px;
-    width: 100%;
-  }
+    .h1 {
+        font-size: 24px;
+    }
 
-  .border {
-    padding: 15px;
-    font-size: 14px;
-    width: 95%;
-  }
+    .border {
+        padding: 15px;
+        font-size: 14px;
+    }
 
-  .search {
-    font-size: 12px;
-  }
+    .search {
+        font-size: 12px;
+    }
 
-  .button {
-    font-size: 12px;
-    width: 80px;
-  }
-
-  .middle .h5 {
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  .title div {
-    font-size: 14px;
-  }
+    .button {
+        font-size: 12px;
+        width: 80px;
+    }
 }
-@media screen and (max-height: 700px) {
-  .title {
-    top: 60px;
-  }
-
-  .border {
-    bottom: 2%;
-    height: auto;
-  }
-
-  .h1 {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-height: 500px) {
-  .border {
-    position: static;
-    margin: 10px auto;
-  }
-}
-
