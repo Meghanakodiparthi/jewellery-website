@@ -272,8 +272,6 @@
     font-size: 18px;
   }
 }
-
-/* ----------- Mobile (480px and below) ----------- */
 @media screen and (max-width: 480px) {
   .h1 {
     font-size: 24px;
@@ -302,5 +300,6 @@
     font-size: 14px;
   }
 }
+
 
 
