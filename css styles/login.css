@@ -10,8 +10,8 @@
 {
      background-size: cover;
     background-position: center;
-    width:1300px;
-    height:559px;
+    width:100%;
+    height:100%;
 }
 .header{
     position:absolute;
@@ -302,4 +302,5 @@
     font-size: 14px;
   }
 }
+
 
